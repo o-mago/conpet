@@ -2,7 +2,7 @@
     text-align: center;
     margin: 40px 0;
   }
-  
+
   /* -------------------------------- 
   
   Main Components 
@@ -24,6 +24,7 @@
       width: 90%;
       max-width: 1400px;
       margin: 2em auto;
+      height: 1500px; 
     }
     .cd-schedule::after {
       clear: both;
@@ -46,12 +47,13 @@
       top: 0;
       left: 0;
       height: 100%;
-      width: 100%;
-      padding-top: 50px;
+      width: 93%;
+      padding-top: 60px;
     }
     .cd-schedule .timeline li {
       position: relative;
-      height: 50px;
+      height: 40px;
+      list-style: none;
     }
     .cd-schedule .timeline li::after {
       /* this is used to create the table horizontal lines */
@@ -94,6 +96,7 @@
   
   .cd-schedule .events .events-group {
     margin-bottom: 30px;
+    list-style: none;
   }
   
   .cd-schedule .events .top-info {
@@ -141,6 +144,7 @@
     margin-right: 20px;
     -webkit-transition: opacity .2s, background .2s;
     transition: opacity .2s, background .2s;
+    list-style: none;
   }
   
   .cd-schedule .events .single-event:last-of-type {
@@ -170,6 +174,7 @@
       border: 1px solid #EAEAEA;
       /* reset style */
       margin-bottom: 0;
+      height: 1450px;
     }
     .cd-schedule .events .events-group:not(:first-of-type) {
       border-left-width: 0;
@@ -238,7 +243,7 @@
   @media only screen and (min-width: 1000px) {
     .cd-schedule .events {
       /* 60px is the .timeline element width */
-      width: calc(100% - 60px);
+      width: 110%;
       margin-left: 60px;
     }
   }
@@ -259,12 +264,12 @@
   }
   
   .cd-schedule .event-name {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
   
   @media only screen and (min-width: 800px) {
     .cd-schedule .event-name {
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
   }
   
