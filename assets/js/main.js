@@ -56,7 +56,7 @@ function writeUserData(userId, nome, email, cpf, pet, telefone, endereco, cep, c
       else {
         alert("Para efetuar a sua inscrição, clique sobre o botão do PagSeguro e realize o pagamento da inscrição!");
         document.getElementById("registration-form").style.visibility = "hidden"; 
-        document.getElementById("buttonAppear").innerHTML = "<form action='https://pagseguro.uol.com.br/checkout/v2/payment.html' method='post'><input type='hidden' name='code' value='4BB2E317EDEDFD6004BACFA71F6E2C0E' /><input type='hidden' name='iot' value='button' /><input type='image' src='https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-pagar-azul-assina.gif' name='submit' alt='Pague com PagSeguro - é rápido, grátis e seguro!' /></form>";
+        document.getElementById("buttonAppear").innerHTML = '<!-- INICIO FORMULARIO BOTAO PAGSEGURO --><form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post"><input type="hidden" name="code" value="1299FAF7303041E3344D1FB13D05F2AA" /><input type="hidden" name="iot" value="button" /><input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></form>';
         document.getElementById("mensagemPagamento").innerHTML = "<p>Realize o pagamento da inscrição, clicando no botão abaixo, para efetivar a sua inscrição</p>"
       }
     });
