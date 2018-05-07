@@ -237,6 +237,10 @@ ul li {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.button-appear {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .section {
     padding: 90px 0;
