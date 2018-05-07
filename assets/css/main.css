@@ -326,7 +326,7 @@ ul li {
   min-height: 37vmax;
   position: relative;
   text-align: center;
-  background: url(../images/backgrounds/header1.png) no-repeat center center/cover;
+  background: url(../images/backgrounds/header4.png) no-repeat center center/cover;
   display: table;
 }
 .site-header::before {
@@ -336,7 +336,7 @@ ul li {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .site-header .intro {
   color: #fff;
@@ -348,7 +348,7 @@ ul li {
   padding: 0 15px;
   display: table-cell;
   vertical-align: middle;
-  height: 37vmax;
+  height: 43vmax;
 }
 .site-header .intro h2 {
   margin-top: 0px;
