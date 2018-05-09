@@ -547,10 +547,16 @@ ul li {
   }
  }
 
- #imagens-background {
-   max-width: 100%;
-   margin: -200px
+ @media (min-width: 768px) {
+  #imagens-background {
+    max-width: 100%;
+    margin: -200px
+  }
  }
+
+ #imagens-background {
+  max-width: 100%;
+}
  
  #imagens-background img {
    position:absolute;
