@@ -98,11 +98,12 @@ function writeUserData(userId, nome, email, cpf, pet, telefone, endereco, cep, c
       alert("Erro! Por favor, efetue o processo de inscrição novamente" + error);
     }
     else {
-      alert("Para efetuar a sua inscrição, faça a transferência de R$130,00 (em até 3 dias úteis) para a seguinte conta bancária. Após o depósito, envie uma mensagem para o email CONPET@PETELETRICA.COM com o recibo anexado");
+      // alert("Para efetuar a sua inscrição, faça a transferência de R$130,00 (em até 3 dias úteis) para a seguinte conta bancária. Após o depósito, envie uma mensagem para o email CONPET@PETELETRICA.COM com o recibo anexado");
+      alert("Para efetuar a sua inscrição, clique em 'OK' e, posteriormente, sobre o botão do PagSeguro e efetue o pagamento");
       document.getElementById("registration-form").style.visibility = "hidden";
-      // document.getElementById("buttonAppear").innerHTML = '<!-- INICIO FORMULARIO BOTAO PAGSEGURO --><form target="_blank" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post"><input type="hidden" name="code" value="FEE38B493434161224A36F93CCE2B663" /><input type="hidden" name="iot" value="button" /><input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></form>';
-      // document.getElementById("mensagemPagamento").innerHTML = "<p>Realize o pagamento da inscrição, clicando no botão abaixo, para efetivar a sua inscrição</p>"
-      document.getElementById("mensagemPagamento").innerHTML = "<p style='font-size: 25px;text-align: center !important;'>Para efetuar a sua inscrição, faça a transferência de R$130,00 (em até 3 dias úteis) para a seguinte conta bancária. Após o depósito, envie uma mensagem para o email CONPET@PETELETRICA.COM com o recibo anexado</p><p>Banco do Brasil</p><p>Agẽncia: 2995-5</p><p>Conta Bancária: 44001-9</p><p>Titular: Alexandre Cabral Bedeschi</p>"
+      document.getElementById("buttonAppear").innerHTML = '<!-- INICIO FORMULARIO BOTAO PAGSEGURO --><form target="_blank" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post"><input type="hidden" name="code" value="FEE38B493434161224A36F93CCE2B663" /><input type="hidden" name="iot" value="button" /><input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></form>';
+      document.getElementById("mensagemPagamento").innerHTML = "<p>Realize o pagamento da inscrição, clicando no botão abaixo, para efetivar a sua inscrição. Devido ao tempo de processamento, pode ser que leve alguns dias para efetuar sua inscrição.</p>"
+      // document.getElementById("mensagemPagamento").innerHTML = "<p style='font-size: 25px;text-align: center !important;'>Para efetuar a sua inscrição, faça a transferência de R$130,00 (em até 3 dias úteis) para a seguinte conta bancária. Após o depósito, envie uma mensagem para o email CONPET@PETELETRICA.COM com o recibo anexado</p><p>Banco do Brasil</p><p>Agẽncia: 2995-5</p><p>Conta Bancária: 44001-9</p><p>Titular: Alexandre Cabral Bedeschi</p>"
     }
   });
 }
